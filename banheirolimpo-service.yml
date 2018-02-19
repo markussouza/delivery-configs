@@ -33,3 +33,8 @@ security:
   oauth2:
     resource:
       userInfoUri: ${authserver.hostname}/user
+
+bot:
+  uri: https://api.telegram.org/
+  token: 488451384:AAFWSI6-SyR02hZ-hpXQRYtlE0bsQP4CbPU
+  username: BanheiroLimpoBot
