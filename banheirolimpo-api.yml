@@ -15,9 +15,11 @@ eureka:
 
 spring:
     datasource:
+        data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
         password: 'root'
         platform: mysql
+        schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/banheiro-limpo?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
