@@ -16,9 +16,9 @@ eureka:
 spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        password: 'root'
+        password: 'm4rku5'
         platform: mysql
-        url: jdbc:mysql://localhost/banheiro_limpo?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        url: jdbc:mysql://172.17.0.2:3306/banheiro_limpo?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
