@@ -3,28 +3,12 @@ server:
 
 eureka:
   instance:
-    preferIpAddress: true
     hostname: localhost
     port: 8761
   client:
     registerWithEureka: true
-    fetchRegistry: true
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
-
-management: 
-  security: 
-    enabled: false
-    
-security:
-  basic: 
-  enabled: false
-  
-hystrix: 
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: false
